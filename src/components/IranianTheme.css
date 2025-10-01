@@ -1,0 +1,340 @@
+/* رنگ‌های اصلی سیستم ایرانی */
+:root {
+  --iran-green: #239F40;      /* سبز پرچم ایران */
+  --persian-blue: #1C39BB;    /* آبی سنتی ایرانی */
+  --gulf-turquoise: #40E0D0;  /* فیروزه‌ای خلیج فارس */
+  --persian-gold: #FFD700;    /* طلایی ایرانی */
+  --iran-red: #DA0000;        /* قرمز پرچم ایران */
+  --white-strong: #FFFFFF;
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+}
+
+/* گرادیانت‌های پیشنهادی */
+.bg-gradient-persian-gulf {
+  background: linear-gradient(135deg, var(--persian-blue) 0%, var(--gulf-turquoise) 100%);
+}
+
+.bg-gradient-persian-traditional {
+  background: linear-gradient(135deg, var(--iran-green) 0%, var(--persian-blue) 50%, var(--persian-gold) 100%);
+}
+
+.bg-gradient-desert-oasis {
+  background: linear-gradient(135deg, var(--persian-gold) 0%, var(--gulf-turquoise) 100%);
+}
+
+/* دکمه‌ها */
+.kids-button-iran {
+  background: linear-gradient(135deg, var(--iran-red) 0%, var(--persian-gold) 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(218, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px var(--shadow-dark);
+}
+
+.kids-button-iran:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(218, 0, 0, 0.4);
+}
+
+.kids-button-persian {
+  background: linear-gradient(135deg, var(--persian-blue) 0%, var(--gulf-turquoise) 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(28, 57, 187, 0.3);
+  text-shadow: 1px 1px 2px var(--shadow-dark);
+}
+
+.kids-button-persian:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(28, 57, 187, 0.4);
+}
+
+.kids-button-gulf {
+  background: linear-gradient(135deg, var(--gulf-turquoise) 0%, var(--iran-green) 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(64, 224, 208, 0.3);
+  text-shadow: 1px 1px 2px var(--shadow-dark);
+}
+
+.kids-button-gulf:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(64, 224, 208, 0.4);
+}
+
+/* متن‌ها */
+.font-kids-title {
+  font-family: 'Vazirmatn', 'Estedad', 'Samim', 'Tahoma', 'Arial', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.font-kids-body {
+  font-family: 'Vazirmatn', 'Estedad', 'Samim', 'Tahoma', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.text-white-strong {
+  color: var(--white-strong);
+  text-shadow: 2px 2px 4px var(--shadow-dark);
+}
+
+.text-white-enhanced {
+  color: var(--white-strong);
+  text-shadow: 1px 1px 3px var(--shadow-dark), 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* کارت‌ها */
+.persian-border {
+  border: 3px solid var(--persian-gold);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+}
+
+.persian-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, var(--persian-gold) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, var(--gulf-turquoise) 2px, transparent 2px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+/* ستاره ایرانی */
+.iranian-star {
+  position: relative;
+}
+
+.iranian-star::before {
+  content: '✨';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  animation: sparkle 2s infinite;
+}
+
+.iranian-star::after {
+  content: '✨';
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  animation: sparkle 2s infinite 1s;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: translateY(-50%) scale(0.8); }
+  50% { opacity: 1; transform: translateY(-50%) scale(1.2); }
+}
+
+/* نوار پیشرفت ایرانی */
+.progress-bar-iranian {
+  background: linear-gradient(90deg, var(--iran-green) 0%, var(--persian-blue) 50%, var(--persian-gold) 100%);
+  height: 16px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 10px rgba(35, 159, 64, 0.3);
+}
+
+.progress-container-iranian {
+  background: var(--white-strong);
+  border-radius: 12px;
+  padding: 2px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* RTL Support */
+.rtl-support {
+  direction: rtl;
+  text-align: right;
+}
+
+/* انیمیشن‌های ایرانی */
+.fade-in-persian {
+  animation: fadeInPersian 0.8s ease-out;
+}
+
+@keyframes fadeInPersian {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.bounce-persian {
+  animation: bouncePersian 1s ease-out;
+}
+
+@keyframes bouncePersian {
+  0% { transform: scale(0.3); }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+/* کارت‌های بازی */
+.game-card-iranian {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--persian-gold);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.game-card-iranian:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.3);
+}
+
+/* دکمه‌های مرحله */
+.level-button-iranian {
+  background: linear-gradient(135deg, var(--iran-green) 0%, var(--persian-blue) 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(35, 159, 64, 0.3);
+  text-shadow: 1px 1px 2px var(--shadow-dark);
+  min-width: 150px;
+}
+
+.level-button-iranian:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(35, 159, 64, 0.4);
+}
+
+/* پیام‌های بازی */
+.message-iranian {
+  background: linear-gradient(135deg, var(--persian-gold) 0%, var(--gulf-turquoise) 100%);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  text-shadow: 1px 1px 2px var(--shadow-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .font-kids-title {
+    font-size: 2rem;
+  }
+  
+  .font-kids-body {
+    font-size: 1rem;
+  }
+  
+  .kids-button-iran,
+  .kids-button-persian,
+  .kids-button-gulf,
+  .level-button-iranian {
+    padding: 10px 20px;
+    font-size: 16px;
+    min-width: 120px;
+  }
+  
+  .game-card-iranian {
+    padding: 15px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .font-kids-title {
+    font-size: 1.5rem;
+  }
+  
+  .iranian-star::before,
+  .iranian-star::after {
+    display: none;
+  }
+  
+  .kids-button-iran,
+  .kids-button-persian,
+  .kids-button-gulf,
+  .level-button-iranian {
+    padding: 8px 16px;
+    font-size: 14px;
+    min-width: 100px;
+  }
+}
+
+/* دسترسی‌پذیری */
+.accessible-button {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.high-contrast {
+  filter: contrast(1.2);
+}
+
+/* فونت‌های فارسی */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap');
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 4px solid var(--gulf-turquoise);
+  border-top: 4px solid var(--persian-gold);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+.loading-spinner-iranian {
+  border: 6px solid var(--gulf-turquoise);
+  border-top: 6px solid var(--persian-gold);
+  border-right: 6px solid var(--iran-green);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin-persian 1.5s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-persian {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}

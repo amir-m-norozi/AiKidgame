@@ -1,0 +1,44 @@
+# Node
+node_modules/
+# Build / production
+/build/
+dist/
+out/
+# Create React App / Vite / bundler cache
+/.cache/
+/.cache-loader
+/.parcel-cache
+/.vite/
+# TypeScript
+*.tsbuildinfo
+# Env files (do not commit secrets)
+.env
+.env.*
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+# Test coverage
+coverage/
+# Editor / OS
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+Thumbs.db
+# Storybook
+.storybook/
+# Misc
+eslintcache
+pids
+/*.pid
+/*.seed
+/*.pid.lock
+# Optional: ignore local env files or secrets
+local.env
